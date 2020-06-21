@@ -1,7 +1,7 @@
 # Less Alone (working title)
 **Ben Carpenters CS50 final project** 
 
-**The goal:** A web app built to allow poeple to shares notes of gradidtude and postitivty without fighting to be heard.
+**The goal:** A web app built to allow poeple to shares notes of graditude and postitivity without fighting to be heard.
 
 ## 1. Main technologies:
  1. HTML/CSS
@@ -13,10 +13,22 @@
 ## User flow:
 ![user flow immage](https://raw.githubusercontent.com/bacarpenter/cs50_final/master/cs50%20less%20alone%20user%20flow.png)
 
-## Strech goals:
+## Project Landmarks:
+- [ ]  User can register for an account
+- [ ] User can login to an account
+- [ ] User can read notes
+- [ ] User can send notes
+
+## UI goals:
 
  - [ ] Live updating note fead
  - [ ] Info / Welcome page
  - [ ] Animations all over the site
+ - [ ] Good design (more than the draft!)
 
-Thank you for joining me on this journey! 
+#### Aditonal technologies:
+* [lucidchart.com](lucidchart.com)
+*  [stackedit.io](stackedit.io)
+* Not a  technology, but this document was proof read!
+
+Ben Carpenter, 2020. [cs50.harvard.edu](https://cs50.harvard.edu/x/2020/project/)
