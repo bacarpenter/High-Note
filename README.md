@@ -1,2 +1,22 @@
-# cs50_final
-The goal: my plan is to make a specialized social media network, where people can send messages sort of into the void, and other users can recive them. Users will be encouraged to make their messages ones of graititude, or positivity. Just stating postive things have a positive impact, and hearing them can be postive too, making people feel less alone. 
+# Less Alone (working title)
+**Ben Carpenters CS50 final project** 
+
+**The goal:** A web app built to allow poeple to shares notes of gradidtude and postitivty without fighting to be heard.
+
+## 1. Main technologies:
+ 1. HTML/CSS
+ 2. Python
+	 a. Flask
+3.  SQL (SQLite3)
+
+
+## User flow:
+![user flow immage](https://raw.githubusercontent.com/bacarpenter/cs50_final/master/cs50%20less%20alone%20user%20flow.png)
+
+## Strech goals:
+
+ - [ ] Live updating note fead
+ - [ ] Info / Welcome page
+ - [ ] Animations all over the site
+
+Thank you for joining me on this journey! 
