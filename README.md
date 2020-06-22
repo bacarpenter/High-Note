@@ -34,6 +34,7 @@
 * [stackedit.io](stackedit.io)
 * [flask.palletsprojects.com](https://flask.palletsprojects.com/en/0.12.x/tutorial/templates/)
 * [makeareadme.com](https://www.makeareadme.com/)
+* [w3schools.com](www.w3schools.com)
 * Not a  technology, but this document was proof read!
 
 Ben Carpenter, 2020. [cs50.harvard.edu](https://cs50.harvard.edu/x/2020/project/)
