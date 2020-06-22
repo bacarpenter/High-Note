@@ -5,9 +5,8 @@
 
 ## 1. Main technologies:
  1. HTML/CSS
- 2. Python
-	 a. Flask
-3.  SQL (SQLite3)
+ 2. Python (Flask)
+ 3.  SQL (SQLite3)
 
 
 ## User flow:
