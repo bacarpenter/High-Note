@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}
+    Compose Note
+{% endblock %}
+{% block body %}
+<h2>Write a note:</h2>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <textarea name="body" placeholder="Write your note here..."></textarea>
+    </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" name="signed">
+        <label class="custom-control-label" for="customSwitch1">Sign your note</label>
+    </div>
+    <button class="btn btn-primary" type="submit">Post</button>
+</form>
+<a href="/">Home</a>
+{% endblock %}

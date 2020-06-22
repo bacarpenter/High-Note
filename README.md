@@ -15,8 +15,11 @@
 ## Project Landmarks:
 - [x]  User can register for an account
 - [x] User can login to an account
+- [x] User can send notes
 - [ ] User can read notes
-- [ ] User can send notes
+
+/An important note: even when all of these boxes are checked, the project is far from over. In this state, the project will be less than a hack./
+
 
 ## UI/UX goals:
 

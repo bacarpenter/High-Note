@@ -36,7 +36,7 @@ db = SQL("sqlite:///lessAlone.db")
 @app.route("/")
 @login_required
 def index():
-    return "Well hello there"
+    return redirect("/compose")
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -89,6 +89,24 @@ def register():
 
     else:
         return render_template("register.html")
+
+@app.route("/compose", methods = ["GET", "POST"])
+@login_required
+def compose():
+    """Allow users to write their notes """
+    if request.method == "POST":
+        #Insert note into the data base:
+        print(request.form.get("signed"))
+        if request.form.get("signed") == "on":
+            signed = "true"
+        else:
+            signed = "false"
+
+        message = db.execute("INSERT INTO messages (message_text, user_id, signed) VALUES (:body, :user_id, :signed)", body = request.form.get("body"), user_id = session['user_id'], signed = signed)
+        return render_template("noteConformation.html")
+
+    else:
+        return render_template("compose.html")
 
 
 
