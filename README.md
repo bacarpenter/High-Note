@@ -48,4 +48,6 @@
 * Insporation for the login screen [dribbble.com](https://dribbble.com/shots/11157034-Pose-Login-Screen)
 * Not a  technology, but this document was proof read!
 
+*Note: this project is not finished, and therefore, not all atributions have been made, however, before relase, they will be*
+
 Ben Carpenter, 2020. [cs50.harvard.edu](https://cs50.harvard.edu/x/2020/project/)
