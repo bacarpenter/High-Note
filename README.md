@@ -29,7 +29,15 @@
  - [ ] User can change password
  
  ## UI Design Samples:
- ![login.png](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Desktop%20-%201login.png?raw=true)
+ ![login page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Login.png?raw=true)
+ ---
+ ![index page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Index.png?raw=true)
+ ---
+ ![compose page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Compose.png?raw=true)
+ ---
+ ![signup page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Sign%20up.png?raw=true)
+ 
+ *Note, the charicter on the login page is from [Icons8's vector creator](https://icons8.com/vector-creator).* 
 
 #### Aditonal Technologies / Resources:
 * [lucidchart.com](lucidchart.com)
