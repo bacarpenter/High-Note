@@ -2,6 +2,7 @@
 **Ben Carpenters CS50 final project**
 
 **The goal:** A web app built to allow poeple to shares notes of graditude and postitivity without fighting to be heard.
+**Status** Hack
 
 ## 1. Main Technologies:
  1. HTML/CSS
@@ -16,9 +17,9 @@
 - [x]  User can register for an account
 - [x] User can login to an account
 - [x] User can send notes
-- [ ] User can read notes
+- [x] User can read notes
 
-*An important note: even when all of these boxes are checked, the project is far from over. In this state, the project will be less than a hack.*
+*An important note: Though the boxes are checked, my work is far from done. Functanilty is half the battle, user experience will make up the rest.*
 
 
 ## UI/UX Goals:

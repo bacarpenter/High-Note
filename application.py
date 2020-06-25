@@ -9,6 +9,7 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 from datetime import datetime
 from helpers import login_required
+import random
 
 # Configure application
 app = Flask(__name__)
@@ -36,11 +37,14 @@ db = SQL("sqlite:///lessAlone.db")
 @app.route("/")
 @login_required
 def index():
-    return redirect("/compose")
+    note = db.execute("SELECT message_text FROM messages")
+    i = random.randint(0, (len(note) - 1)) # min 1 becuase of zero index
+    return render_template("index.html", note=note[i])
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """Log user in (this was based on the login from web/finance)"""
+    session.clear
     if request.method == "POST":
         # Get info from the data base on given username:
         user = db.execute("SELECT * FROM users WHERE username = :username", username = request.form.get("username"))
@@ -108,6 +112,10 @@ def compose():
     else:
         return render_template("compose.html")
 
+@app.route("/logout")
+def logout():
+    session.clear
+    return redirect("/login")
 
 
 def apology(message):

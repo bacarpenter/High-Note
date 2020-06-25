@@ -4,6 +4,10 @@
 {% endblock %}
 {% block body %}
 <h2>Login:</h2>
+<div>
+<img src="https://github.com/bacarpenter/cs50_final/blob/master/images/loginman.png?raw=true" style="height: 500px;">
+<p id="hey">Hey,</p>
+<p id="you're_here">you're here!</p>
 <form action="/login" method="post">
     <div class="form-group">
         <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
@@ -13,5 +17,6 @@
     </div>
     <button class="btn btn-primary" type="submit">Login</button>
 </form>
+</div>
 <a href="/register">Register</a>
 {% endblock %}
