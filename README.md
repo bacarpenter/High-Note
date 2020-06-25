@@ -1,8 +1,8 @@
-# Less Alone (working title)
+# High Note
 **Ben Carpenters CS50 final project**
 
 **The goal:** A web app built to allow poeple to shares notes of graditude and postitivity without fighting to be heard.
-**Status** Hack
+**Status:** Hack
 
 ## 1. Main Technologies:
  1. HTML/CSS
