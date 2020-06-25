@@ -3,20 +3,21 @@
     Login
 {% endblock %}
 {% block body %}
-<h2>Login:</h2>
-<div>
-<img src="https://github.com/bacarpenter/cs50_final/blob/master/images/loginman.png?raw=true" style="height: 500px;">
-<p id="hey">Hey,</p>
-<p id="you're_here">you're here!</p>
-<form action="/login" method="post">
-    <div class="form-group">
-        <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+<div class="container" style="width: 100%; height: 750px; stext-align: left; margin: 0px; display: flex;">
+    <img src="https://github.com/bacarpenter/cs50_final/blob/master/images/loginman.png?raw=true" id="loginman">
+    <div>
+        <p id="hey">Hey,</p>
+        <p id="urhere">you're here!</p>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password">
+            </div>
+            <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+        <a href="/register">Register</a>
     </div>
-    <div class="form-group">
-        <input class="form-control" name="password" placeholder="Password" type="password">
-    </div>
-    <button class="btn btn-primary" type="submit">Login</button>
-</form>
 </div>
-<a href="/register">Register</a>
 {% endblock %}

@@ -28,7 +28,7 @@
  - [ ] Animations all over the site
  - [ ] Good design (more than the draft!)
  - [ ] User can change password
- 
+
  ## UI Design Samples:
  ![login page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Login.png?raw=true)
  ---
@@ -37,8 +37,8 @@
  ![compose page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Compose.png?raw=true)
  ---
  ![signup page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Sign%20up.png?raw=true)
- 
- *Note, the charicter on the login page is from [Icons8's vector creator](https://icons8.com/vector-creator).* 
+
+ *Note, the charicter on the login page is from [Icons8's vector creator](https://icons8.com/vector-creator).*
 
 #### Aditonal Technologies / Resources:
 * [lucidchart.com](lucidchart.com)
@@ -46,7 +46,11 @@
 * [flask.palletsprojects.com](https://flask.palletsprojects.com/en/0.12.x/tutorial/templates/)
 * [makeareadme.com](https://www.makeareadme.com/)
 * [w3schools.com](www.w3schools.com)
+* [fonts.google.com](https://fonts.google.com)
+* [css-tricks.com](https://css-tricks.com)
+* [wpbeaches.com](https://wpbeaches.com/make-images-scale-responsive-web-design/)
 * Insporation for the login screen [dribbble.com](https://dribbble.com/shots/11157034-Pose-Login-Screen)
+* [convertingcolors.com](https://convertingcolors.com/rgb-color-246_107_127.html?search=RGB(246,%20107,%20127)
 * Not a  technology, but this document was proof read!
 
 *Note: this project is not finished, and therefore, not all atributions have been made, however, before relase, they will be*
