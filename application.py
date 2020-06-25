@@ -44,18 +44,15 @@ def index():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """Log user in (this was based on the login from web/finance)"""
-    session.clear
+    session.clear()
+
     if request.method == "POST":
         # Get info from the data base on given username:
         user = db.execute("SELECT * FROM users WHERE username = :username", username = request.form.get("username"))
 
-        # Make sure user is in the database:
-        if user == []:
-            return apology("user not found")
-
-        # Check if password is correct:
-        if check_password_hash(user[0]['password'], request.form.get("password")) == False:
-            return apology("password is incorrect")
+        # Make sure user is in the database and password matches:
+        if not user or not check_password_hash(user[0]['password'], request.form.get("password")):
+            return apology("incorrect username / password")
 
         else:
             session['user_id'] = user[0]['user_id']
@@ -68,6 +65,8 @@ def login():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user (this was based on the login from web/finance)"""
+    session.clear()
+    print(session)
     if request.method=="POST": #If user is submitting the form
 
         #Check passowrds match
@@ -114,8 +113,9 @@ def compose():
 
 @app.route("/logout")
 def logout():
-    session.clear
-    return redirect("/login")
+    session.clear()
+    print(session)
+    return redirect("/")
 
 
 def apology(message):

@@ -3,18 +3,23 @@
     Register
 {% endblock %}
 {% block body %}
-<h2>Register:</h2>
-<form action="/register" method="post">
-    <div class="form-group">
-        <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+<div class="middle">
+    <div class="container" style="width: 30%; padding: 25px;">
+        <h1 class="hey" style="padding: 0px; text-align: center;">Come,</h1>
+        <h3 class="urhere" style="padding: 0px;">and join the fun</h3>
+        <form action="/register" method="post" style="padding-top: 25px;">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="passwordConfirm" placeholder="Confirm Password" type="password">
+            </div>
+            <button class="btn greenbutton" type="submit">Sign Up</button>
+        </form>
     </div>
-    <div class="form-group">
-        <input class="form-control" name="password" placeholder="Password" type="password">
-    </div>
-    <div class="form-group">
-        <input class="form-control" name="passwordConfirm" placeholder="Confirm Password" type="password">
-    </div>
-    <button class="btn btn-primary" type="submit">Sign Up</button>
-</form>
+</div>
 <a href="/login">Login</a>
 {% endblock %}

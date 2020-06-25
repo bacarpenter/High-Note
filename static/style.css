@@ -1,15 +1,30 @@
-#hey {
+.root {
     font-family: 'Poppins', sans-serif;
+}
+.hey {
     font-size: 150px;
     padding-left: 120px;
     padding-bottom: 25px;
     color: 	#F66B7F;
 }
-#urhere {
-    font-family: 'Poppins', sans-serif;
+.urhere {
     font-size: 48px;
     padding-left: 90px;
+    color: #F9CF6B;
 }
 #loginman {
     max-width: 70%;
+}
+.greenbutton {
+    background-color: #80B5A6;
+    border-color: #80B5A6;
+    color: white;
+}
+#registerarea {
+    display: absolute;
+    bottom: 0%;
+}
+.middle {
+    width: 100%;
+    text-align: center;
 }
