@@ -26,5 +26,7 @@
 }
 .middle {
     width: 100%;
-    text-align: center;
+    display: flex;
+    /* From the gif in the question at https://stackoverflow.com/questions/32378953/keep-the-middle-item-centered-when-side-items-have-different-widths */
+    justify-content: center;
 }

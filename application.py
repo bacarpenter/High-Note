@@ -37,9 +37,8 @@ db = SQL("sqlite:///lessAlone.db")
 @app.route("/")
 @login_required
 def index():
-    note = db.execute("SELECT message_text FROM messages")
-    i = random.randint(0, (len(note) - 1)) # min 1 becuase of zero index
-    return render_template("index.html", note=note[i])
+    note = db.execute("SELECT message_text FROM messages ORDER BY random() LIMIT 25")
+    return render_template("index.html", note=note, noteLen=len(note))
 
 @app.route("/login", methods=["GET", "POST"])
 def login():

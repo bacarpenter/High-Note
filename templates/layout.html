@@ -7,11 +7,18 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="static/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <title> Less Alone | {% block title %}{% endblock %}</title>
+
+        <!-- favicon's and code (with edits) from favicon.io -->
+        <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+        <link rel="manifest" href="static/site.webmanifest">
+
+        <title> High Note | {% block title %}{% endblock %}</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Less Alone</a>
+          <a class="navbar-brand" href="/">High Note</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,4 +42,5 @@
         </nav>
         {% block body %}{% endblock %}
     </body>
+    {% block footer %}{% endblock %}
 </html>
