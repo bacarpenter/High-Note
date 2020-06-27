@@ -32,7 +32,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Open the database
-db = SQL("sqlite:///lessAlone.db")
+db = SQL("sqlite:///highNote.db")
 
 @app.route("/")
 @login_required
