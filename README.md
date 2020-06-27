@@ -1,13 +1,16 @@
+
 # High Note
 **Ben Carpenters CS50 final project**
 
 **The goal:** A web app built to allow poeple to shares notes of graditude and postitivity without fighting to be heard.
-**Status:** Hack
+
+**Status:** Done, for now 😁
 
 ## 1. Main Technologies:
  1. HTML/CSS
- 2. Python (Flask)
- 3. SQL (SQLite3)
+ 2. Bootstrap
+ 3. Python (Flask)
+ 4. SQL (SQLite3)
 
 
 ## User Flow:
@@ -19,14 +22,11 @@
 - [x] User can send notes
 - [x] User can read notes
 
-*An important note: Though the boxes are checked, my work is far from done. Functanilty is half the battle, user experience will make up the rest.*
-
-
 ## UI/UX Goals:
- - [ ] Live updating note fead
- - [ ] Info / Welcome page
+ - [x] Live updating note fead (not entirley live, but you don't need to reload for each note you read)
+ - [x] Info / Welcome page
  - [ ] Animations all over the site
- - [ ] Good design (more than the draft!)
+ - [x] Good design (more than the draft!)
  - [ ] User can change password
 
 ## UI Design Samples:
@@ -42,23 +42,26 @@
 
 ## Strech project funcunality goals:
 - [ ] Message likes
-- [ ] Message reporting
+- [x] Message reporting
 - [ ] Profile page (w/ all posted notes)
 
 #### Aditonal Technologies / Resources:
 * [lucidchart.com](lucidchart.com)
 * [stackedit.io](stackedit.io)
-* [flask.palletsprojects.com](https://flask.palletsprojects.com/en/0.12.x/tutorial/templates/)
-* [makeareadme.com](https://www.makeareadme.com/)
 * [w3schools.com](www.w3schools.com)
 * [fonts.google.com](https://fonts.google.com)
 * [css-tricks.com](https://css-tricks.com)
 * [wpbeaches.com](https://wpbeaches.com/make-images-scale-responsive-web-design/)
 * Insporation for the login screen [dribbble.com](https://dribbble.com/shots/11157034-Pose-Login-Screen)
-* [convertingcolors.com](https://convertingcolors.com/rgb-color-246_107_127.html?search=RGB(246,%20107,%20127)
-* [sqlitetutorial.net](https://www.sqlitetutorial.net/sqlite-functions/sqlite-random/)
-* Not a  technology, but this document was proof read!
+*  [convertingcolors.com](https://convertingcolors.com)
+* Not a  technology, but this document, along with some parts of the site were proof read!
 
-*Note: this project is not finished, and therefore, not all atributions have been made, however, before relase, they will be*
+*Note: This list encompasses things that played a large role in the creation of the site. Code has been cited where it should have been, to the absoulte best of my abillity*
 
-Ben Carpenter, 2020. [cs50.harvard.edu](https://cs50.harvard.edu/x/2020/project/)
+## Take aways:
+Wow, the end of CS50. I did know if i'd see the class through this far, but here I am. At the end of the road. Making this project was alot of fun, and encompases a lot of what I learned. I took time to make things effecant, and smooth. Though about what it felt like as a user, and put those thoughts into my UI/UX. However, if you go thorugh the readme, you will notice that some of my checkmarks are left unchecked. I decided to leave these in, as a remindeder to my self that there is always more work that could be done. I hope you can enjoy the site just as much as I enjoyed making it.
+
+With love,
+Ben Carpenter
+
+Project for: [cs50.harvard.edu](https://cs50.harvard.edu/x/2020/project/)

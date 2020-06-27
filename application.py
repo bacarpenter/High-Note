@@ -37,7 +37,12 @@ db = SQL("sqlite:///lessAlone.db")
 @app.route("/")
 @login_required
 def index():
-    note = db.execute("SELECT message_text FROM messages ORDER BY random() LIMIT 25")
+    note = db.execute("SELECT * FROM messages ORDER BY random() LIMIT 25")
+    i = 0
+    while i < len(note):
+        note[i]['username'] = db.execute("SELECT username FROM users WHERE user_id = :user_id", user_id=note[i]['user_id'])[0]['username']
+        i += 1
+
     return render_template("index.html", note=note, noteLen=len(note))
 
 @app.route("/login", methods=["GET", "POST"])
@@ -55,7 +60,12 @@ def login():
 
         else:
             session['user_id'] = user[0]['user_id']
-            return redirect("/")
+            newUser = db.execute("SELECT welcomed FROM users WHERE user_id = :user_id", user_id = session['user_id'])
+            if newUser[0]['welcomed'] == 0:
+                return redirect("/welcome")
+
+            else:
+                return redirect("/")
 
 
     else:
@@ -100,9 +110,9 @@ def compose():
         #Insert note into the data base:
         print(request.form.get("signed"))
         if request.form.get("signed") == "on":
-            signed = "true"
+            signed = 1
         else:
-            signed = "false"
+            signed = 0
 
         message = db.execute("INSERT INTO messages (message_text, user_id, signed) VALUES (:body, :user_id, :signed)", body = request.form.get("body"), user_id = session['user_id'], signed = signed)
         return render_template("noteConformation.html")
@@ -116,6 +126,26 @@ def logout():
     print(session)
     return redirect("/")
 
+@app.route("/welcome")
+@login_required
+def welcome():
+    db.execute("UPDATE users SET welcomed = 1 WHERE user_id = :user_id", user_id=session['user_id'])
+    print(f"user #{session['user_id']} has been welcomed")
+    return render_template("welcome.html")
+@app.route("/report", methods = ["GET", "POST"])
+@login_required
+def report():
+    if request.method == "POST":
+
+        # Make sure that the message_id is valid
+        if not db.execute("SELECT * FROM messages WHERE message_id = :message_id", message_id=request.form.get("message_id")):
+            return apology("Message id is not vaild.")
+
+        db.execute("INSERT INTO reports (message_id, user_id, reason) VALUES (:message_id, :user_id, :reason)", message_id=request.form.get("message_id"), user_id=session['user_id'], reason=request.form.get("reason"))
+        return render_template("reportConformation.html")
+
+    else:
+        return render_template("report.html")
 
 def apology(message):
     print (message)
@@ -123,4 +153,5 @@ def apology(message):
     return render_template("apology.html", message=message)
 
 
-""" Note, I took code from both the distrotbution and my own code from finance on the web track """
+""" Note, I took code from both the distrotbution and my own code from finance on the web track
+With all my love going to Brady and my family <3"""

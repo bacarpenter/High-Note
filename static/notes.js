@@ -11,8 +11,8 @@ while (true) {
     i += 1;
 }
 
-console.log(notes)
-
+console.log(notes);
+notes[0].hidden = false;
 i = 0;
 function nextNote() {
     notes[i].hidden = true;
