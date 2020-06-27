@@ -4,6 +4,8 @@
 
 **The goal:** A web app built to allow poeple to shares notes of graditude and postitivity without fighting to be heard.
 
+**To run:** Download the code, make a coppy of the template datbase and name it 'highNote.db'. Then serve with Flask
+
 **Status:** Done, for now 😁
 
 ## 1. Main Technologies:
