@@ -29,17 +29,6 @@
  - [x] Good design (more than the draft!)
  - [ ] User can change password
 
-## UI Design Samples:
- ![login page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Login.png?raw=true)
- ---
- ![index page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Index.png?raw=true)
- ---
- ![compose page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Compose.png?raw=true)
- ---
- ![signup page](https://github.com/bacarpenter/cs50_final/blob/master/readmeImages/Sign%20up.png?raw=true)
-
- *Note, the charicter on the login page is from [Icons8's vector creator](https://icons8.com/vector-creator).*
-
 ## Strech project funcunality goals:
 - [ ] Message likes
 - [x] Message reporting
